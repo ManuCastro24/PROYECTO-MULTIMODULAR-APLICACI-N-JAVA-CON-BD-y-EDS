@@ -1,19 +1,9 @@
 # PROYECTO-MULTIMODULAR-APLICACI-N-JAVA-CON-BD-y-EDS
 
 Introducción :
-Este manual describe la estructura y el funcionamiento de la base de datos del colegio, que incluye información sobre los cursos, los alumnos, las asignaturas que tienen los alumnos y la que imparten los profesores y sobre los propios profesores del colegio.
+Este manual describe el funcionamiento de la aplicación para gestionar un colegio.
 
-La base de datos del colegio se compone principalmente de las siguientes entidades:
-
-Miembros del Colegio: Esta entidad representa a todos los miembros del colegio, incluyendo alumnos, profesores y cualquier otro personal. La clase MiembroColegio proporciona los atributos comunes a todos los miembros, como DNI, nombre, dirección, teléfono, fecha de nacimiento y correo electrónico.
-
-Alumnos: La clase Alumnos extiende de la clase MiembroColegio y agrega atributos específicos para los alumnos, como un identificador único (IdAlumno) y la nota media de este . También incluye métodos para calcular la edad del alumno y para obtener una representación en formato de cadena de texto.
-
-rofesores: La clase Profesores también extiende de la clase MiembroColegio y agrega atributos específicos para los profesores, como un identificador único (IdProfesores) y como su especialidad  . Al igual que la clase Alumnos, incluye métodos para obtener información sobre los profesores.
-
-Cursos: Hay dos tipos de cursos en la base de datos: cursos presenciales y cursos virtuales. Ambos tipos de curso extienden de la clase CursoEscolar. Proporciona los atributos comunes a los cursos, como un identificador único (IdCurso),el nombre, una capacidad máxima de estudiantes, el año de inicio y de fin, y un estado (activo o inactivo),. Los cursos presenciales también tienen un número de aula, mientras que los cursos virtuales tienen una URL asociada.
-
-El funcionamiento básico de la base de datos del colegio implica la creación y gestión de cursos, así como la matriculación de alumnos y la asignación de profesores a los cursos. A continuación se describen algunas de las operaciones principales:
+El funcionamiento básico de la aplicación implica la creación y gestión de cursos, así como la matriculación de alumnos y la asignación de profesores a los cursos. A continuación se describen algunas de las operaciones principales:
 
 Crear un Curso: Para crear un curso, se instancia un objeto de la clase CursoPresencial o CursoVirtual con los parámetros adecuados, como el nombre del curso, la capacidad máxima de estudiantes y otros detalles específicos del tipo de curso.
 
